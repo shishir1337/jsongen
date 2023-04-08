@@ -42,4 +42,4 @@ def generate_json():
         return jsonify(json.loads(response_text.replace('\n', '')))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
